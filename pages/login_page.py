@@ -18,7 +18,6 @@ class LoginPage(BasePage):
         loginPassword = self.browser.find_element(*LoginPageLocators.LOGIN_PASSWORD)
         loginButton = self.browser.find_element(*LoginPageLocators.LOGIN_BUTTON)
         loginButton.click()
-        # реализуйте проверку, что есть форма логина
         assert True, "ошибка в форме логина"
 
     def should_be_register_form(self):
@@ -27,5 +26,4 @@ class LoginPage(BasePage):
         registrationConfirmPassword = self.browser.find_element(*LoginPageLocators.REGISTRATION_CONFIRM)
         registrationButton = self.browser.find_element(*LoginPageLocators.REGISTRATION_BUTTON)
         registrationButton.click()
-        # реализуйте проверку, что есть форма регистрации на странице
         assert True, "ошибка в форме регистрации"
